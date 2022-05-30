@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form name="form1" action="form_enviado.html" method="post">
+    Nome completo:<input name="nome" type="text" placeholder="Informe o nome completo" required="true"><br><br>
+    E-mail:<input name="email" type="email" placeholder="Informe um e-mail válido"><br><br>
+    Sexo:<input name="sexo" type="radio" id="masculino" value="masculino">
+    <label for="masculino">Masculino</label>
+    <input name="sexo" type="radio" id="feminino" value="feminino">
+    <label for="feminino">Feminino</label><br><br>
+    Data de Nascimento:<input name="data" type="date" placeholder="dd/mm/aaaa" required="true"><br><br>
+    Grau de Escolaridade:     
+    <select name="escolaridade" size="1" >
+        <option value='Ensino_medio'>Ensino Médio</option>
+        <option value='Superior_completo' selected="true">Superior Completo</option>
+        <option value='Pos_gradu'>Pós Graduação</option>
+        <option value='Mestrado'>Mestrado</option>
+        <option value='Doutorado'>Doutorado</option>
+    </select><br><br>
+    
+    Estilos musicais preferidos:
+    <select name="musica" size="5" multiple="true">
+        <option value="rock">Rock</option>
+        <option value="funk">Funk</option>
+        <option value="Samba">Samba</option>
+        <option value="pagode">Pagode</option>
+        <option value="pop">Pop</option>
+    </select><br><br>
+
+    Nome de Usuário: <input name="user" type="text" required="true"><br><br>
+    Senha: <input name="Senha" type="password" required="true"><br><br>
+    Cor preferida: <input name="cor" type="color"><br><br>
+    Quantidade de Filhos: <input name="filhos" type="number"><br><br>
+    Quantidade de Veículos: 0<input name="veiculo" type="range">5<br><br>
+    Comentários sobre o site: <textarea name="comentario" cols="30" rows="5"></textarea><br><br>
+    <input type="checkbox" checked="true"> Desejo receber ofertas via e-mail.br <br><br>
+    <input type="submit" name="sbt" value="Enviar">
+    <input type="reset" name="sbt2" value="Limpar campos">
+
+    </form>
+    
+</body>
+</html>
